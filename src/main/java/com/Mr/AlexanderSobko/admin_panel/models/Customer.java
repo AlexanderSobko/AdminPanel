@@ -1,5 +1,6 @@
 package com.Mr.AlexanderSobko.admin_panel.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
@@ -31,6 +32,7 @@ public class Customer {
     @Type(type = "org.hibernate.type.ImageType")
     private byte[] photo;
 
+    @JsonIgnore
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "customer",cascade = CascadeType.REMOVE)
     private List<Order> orders = new ArrayList<>();
 
