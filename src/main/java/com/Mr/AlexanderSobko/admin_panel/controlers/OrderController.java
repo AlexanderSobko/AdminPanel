@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/order")
-@CrossOrigin(origins = "http://178.154.195.111:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class OrderController {
 
     private final CustomerService customerService;
