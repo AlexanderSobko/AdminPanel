@@ -20,4 +20,6 @@ ENV DB_PASSWORD=$PASSWORD
 
 COPY --from=MAVEN_BUILD /target/*.jar /admin.jar
 
+EXPOSE 3001
+
 CMD ["java", "-jar", "/admin.jar"]
