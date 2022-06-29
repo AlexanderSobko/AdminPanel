@@ -18,8 +18,8 @@ ENV DB_URL=$URL
 ENV DB_USERNAME=$USERNAME
 ENV DB_PASSWORD=$PASSWORD
 
-COPY --from=MAVEN_BUILD /target/*.jar /admin.jar
-
 EXPOSE 3001
+
+COPY --from=MAVEN_BUILD /target/*.jar /admin.jar
 
 CMD ["java", "-jar", "/admin.jar"]
