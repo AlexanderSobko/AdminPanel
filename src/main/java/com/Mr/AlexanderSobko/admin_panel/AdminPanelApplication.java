@@ -18,7 +18,10 @@ public class AdminPanelApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/178.154.195.111:80/**").allowedOrigins("*");
+				registry.addMapping("/**")
+						.allowedOrigins("http://178.154.195.111:80")
+						.allowedMethods("*")
+						.maxAge(3600);
 			}
 		};
 	}
