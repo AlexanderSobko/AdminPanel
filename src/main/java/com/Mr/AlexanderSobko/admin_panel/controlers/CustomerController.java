@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/customer")
-@CrossOrigin(origins = "http://178.154.195.111:80")
+@CrossOrigin(origins = "http://178.154.195.111:80", maxAge = 3600)
 public class CustomerController {
 
     private final CustomerService customerService;
