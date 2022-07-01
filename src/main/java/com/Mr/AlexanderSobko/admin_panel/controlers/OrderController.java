@@ -11,8 +11,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/order")
+
 @CrossOrigin(origins = "http://178.154.195.111:80")
+@RequestMapping("/api/order")
 public class OrderController {
 
     private final CustomerService customerService;

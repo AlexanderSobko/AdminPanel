@@ -9,8 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/customer")
+
 @CrossOrigin(origins = "http://178.154.195.111:80")
+@RequestMapping("/api/customer")
 public class CustomerController {
 
     private final CustomerService customerService;
