@@ -20,6 +20,7 @@ public class AdminPanelApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry
 						.addMapping("/**")
+						.allowedMethods("*")
 						.allowedOrigins("http://178.154.195.111")
 						.maxAge(3600);
 			}
