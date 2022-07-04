@@ -19,7 +19,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Pattern(regexp = "\\d", message = "TelegramId can only be a number!")
+    @Pattern(regexp = "\\d+", message = "TelegramId can only be a number!")
     private String telegramId;
 
     @Pattern(regexp = "\\+7\\d{10}",
@@ -30,7 +30,7 @@ public class Customer {
 
     private String lastName;
 
-    private String userName;
+    private String username;
 
     @Lob
     @Type(type = "org.hibernate.type.ImageType")
@@ -48,11 +48,11 @@ public class Customer {
     public String toString() {
         return """
                 Customer
-                id = %s
+                Id = %s
                 Name = %s %s
-                UserName = @%s
+                Username = @%s
                 DeliveryMethod = %s
-                deliveryAddress = %s
-                """.formatted(id,firstName,lastName, userName, deliveryMethod,deliveryAddress);
+                DeliveryAddress = %s
+                """.formatted(id,firstName,lastName, username, deliveryMethod,deliveryAddress);
     }
 }
