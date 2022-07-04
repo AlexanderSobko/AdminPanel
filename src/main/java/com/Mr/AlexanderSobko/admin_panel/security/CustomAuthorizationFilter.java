@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
@@ -28,8 +29,11 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Log4j2
 public class CustomAuthorizationFilter extends OncePerRequestFilter {
 
-    @Value("${JWT_SECRET}")
-    private String secret;
+    private final String secret;
+
+    public CustomAuthorizationFilter(String secret) {
+        this.secret = secret;
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -61,4 +65,5 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
             }
         }
     }
+
 }
