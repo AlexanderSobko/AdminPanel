@@ -21,7 +21,7 @@ public class AdminPanelApplication {
 				registry
 						.addMapping("/**")
 						.allowedMethods("*")
-						.allowedOrigins("http://178.154.195.111")
+//						.allowedOrigins("http://178.154.195.111")
 						.maxAge(7200);
 			}
 		};
