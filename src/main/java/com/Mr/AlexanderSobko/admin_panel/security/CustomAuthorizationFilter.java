@@ -28,7 +28,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Log4j2
 public class CustomAuthorizationFilter extends OncePerRequestFilter {
 
-    @Value("${SECRET}")
+    @Value("${JWT_SECRET}")
     private String secret;
 
     @Override

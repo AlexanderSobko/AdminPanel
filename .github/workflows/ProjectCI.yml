@@ -50,4 +50,5 @@ jobs:
             URL=${{secrets.DB_URL}}
             USERNAME=${{secrets.DB_USERNAME}}
             PASSWORD=${{secrets.DB_PASSWORD}}
+            SECRET=${{secrets.SECRET}}
 
