@@ -1,4 +1,4 @@
-package com.Mr.AlexanderSobko.admin_panel.models;
+package com.Mr.AlexanderSobko.admin_panel.models.dtos;
 
 public class LoginRequestDTO {
 

@@ -1,7 +1,7 @@
 package com.Mr.AlexanderSobko.admin_panel.controlers;
 
-import com.Mr.AlexanderSobko.admin_panel.models.Order;
-import com.Mr.AlexanderSobko.admin_panel.models.OrderDTO;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Order;
+import com.Mr.AlexanderSobko.admin_panel.models.dtos.OrderDTO;
 import com.Mr.AlexanderSobko.admin_panel.services.CustomerService;
 import com.Mr.AlexanderSobko.admin_panel.services.OrderService;
 import com.Mr.AlexanderSobko.admin_panel.services.PatisserieService;

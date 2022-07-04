@@ -1,6 +1,6 @@
 package com.Mr.AlexanderSobko.admin_panel.services;
 
-import com.Mr.AlexanderSobko.admin_panel.models.Patisserie;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Patisserie;
 import com.Mr.AlexanderSobko.admin_panel.repositories.PatisserieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

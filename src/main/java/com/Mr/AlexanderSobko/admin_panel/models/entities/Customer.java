@@ -1,4 +1,4 @@
-package com.Mr.AlexanderSobko.admin_panel.models;
+package com.Mr.AlexanderSobko.admin_panel.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +19,11 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Pattern(regexp = "\\d", message = "TelegramId can only be a number!")
     private String telegramId;
 
+    @Pattern(regexp = "\\+7\\d{10}",
+            message = "The phone number must start with \"+7\" and contain 11 digits!")
     private String phoneNumber;
 
     private String firstName;

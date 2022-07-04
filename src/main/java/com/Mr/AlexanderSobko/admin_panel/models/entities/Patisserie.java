@@ -1,7 +1,8 @@
-package com.Mr.AlexanderSobko.admin_panel.models;
+package com.Mr.AlexanderSobko.admin_panel.models.entities;
 
 import com.Mr.AlexanderSobko.admin_panel.enums.PatisserieSubType;
 import com.Mr.AlexanderSobko.admin_panel.enums.PatisserieType;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Order;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;

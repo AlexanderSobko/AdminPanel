@@ -1,6 +1,7 @@
-package com.Mr.AlexanderSobko.admin_panel.models;
+package com.Mr.AlexanderSobko.admin_panel.models.dtos;
 
 import com.Mr.AlexanderSobko.admin_panel.enums.OrderStatus;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Patisserie;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.context.annotation.Scope;

@@ -1,6 +1,6 @@
 package com.Mr.AlexanderSobko.admin_panel.services;
 
-import com.Mr.AlexanderSobko.admin_panel.models.Customer;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Customer;
 import com.Mr.AlexanderSobko.admin_panel.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

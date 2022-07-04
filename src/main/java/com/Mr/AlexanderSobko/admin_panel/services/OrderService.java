@@ -1,8 +1,8 @@
 package com.Mr.AlexanderSobko.admin_panel.services;
 
 import com.Mr.AlexanderSobko.admin_panel.exceptions.ResourceNotFoundException;
-import com.Mr.AlexanderSobko.admin_panel.models.Order;
-import com.Mr.AlexanderSobko.admin_panel.models.OrderDTO;
+import com.Mr.AlexanderSobko.admin_panel.models.entities.Order;
+import com.Mr.AlexanderSobko.admin_panel.models.dtos.OrderDTO;
 import com.Mr.AlexanderSobko.admin_panel.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
