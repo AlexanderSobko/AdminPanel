@@ -22,7 +22,7 @@ public class AdminPanelApplication {
 						.addMapping("/**")
 						.allowedMethods("*")
 						.allowedOrigins("http://178.154.195.111")
-						.maxAge(3600);
+						.maxAge(7200);
 			}
 		};
 	}
